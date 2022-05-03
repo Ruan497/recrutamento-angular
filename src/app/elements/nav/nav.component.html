@@ -1,0 +1,30 @@
+<nav fxLayout="row" id="desk" fxShow fxHide.xs>
+   
+    <ul id="desktop">
+        <li><a href="https://randomuser.me">API</a></li>
+
+
+        <li><a href="" (click)="reload()">Gerar Novos usuários</a></li>
+    </ul>
+
+</nav>
+
+
+<nav id="mob" fxHide fxShow.xs>
+
+    <ul id="mobile"  *ngIf="show">
+        <li><a (click)="back()">Voltar a página inicial</a></li>
+
+        <li><a href="https://randomuser.me">API</a></li>
+
+    </ul>
+
+    <div id="menu-btn" >
+        <svg width="30" height="30" (click)="toggle()">
+            <path d="M0,5 30,5"     stroke="#fff" stroke-width="4"/>
+            <path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
+            <path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
+        </svg>
+    </div> 
+
+</nav>

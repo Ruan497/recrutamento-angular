@@ -1,0 +1,31 @@
+#div1{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+    
+
+#div2{
+    box-shadow: 0px 30px 40px -20px #a3a5ae;
+    border-top: 3px solid #031634;
+    border-radius: 15px;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#div2 p{
+    color: #a3a5ae;
+    text-decoration: none;
+
+}
+
+#div2 h2{
+    color: #4c4e61;
+}
+

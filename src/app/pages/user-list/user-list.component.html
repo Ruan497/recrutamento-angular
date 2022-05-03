@@ -1,0 +1,11 @@
+<app-nav></app-nav>
+<div id="div1" fxLayout="row" fxFlex>
+    <div id="div2" *ngFor="let user of getAllUsers" >
+        <a [routerLink]="['details']" class="user" style="text-decoration: none;" (click)="details(user.name.first, user.name.last, user.cell, user.email, user.picture.large)">
+            <h2>{{user.name.first}} {{user.name.last}}</h2>
+            <p>{{user.cell}}<p>
+            <p>{{user.email}}</p>
+        </a>
+    </div>
+</div>
+<app-footer></app-footer>
